@@ -1,0 +1,128 @@
+
+@mixin color-mixin() {
+        
+    // -------------------
+    // Brand/Primary Colors
+    // -------------------
+        
+    --color-brand-primary: ''; // Main brand color (used for primary actions like buttons, highlights, links)
+    --color-brand-primary-hover: ''; // Hover state of primary (should follow consistent delta, e.g., ~4% darker/lighter)
+    --color-brand-primary-active: ''; // Active/pressed state (stronger than hover, e.g., ~6–8% change)
+    --color-brand-primary-muted: ''; // Low-emphasis version (used for subtle backgrounds, soft badges, non-critical UI)
+    --color-brand-primary-foreground: ''; // Text/icon color placed on top of primary (must ensure contrast)
+    
+    // OPTIONAL SECONDARY (Only if brand has two colors)
+    --color-brand-secondary: ''; // Secondary brand color (alternative actions, secondary buttons)
+    --color-brand-secondary-hover: ''; // Hover state of secondary (same transformation rule as primary)
+    --color-brand-secondary-active: ''; // Active/pressed state of secondary
+    --color-brand-secondary-muted: ''; // Low-emphasis version of secondary (subtle usage)
+    --color-brand-secondary-foreground: ''; // Text/icon color on secondary
+
+    // -------------------
+    // Background Colors
+    // -------------------
+
+    --color-background-primary: ''; // Base/Elevated layer (can be used anywhere, not limited to page background)
+    --color-background-primary-hover: ''; // Hover for primary background (primary + consistent delta, e.g., 4% darker)
+
+    --color-background-secondary: ''; // Surface layer (cards, containers, grouped sections)
+    --color-background-secondary-hover: ''; // Hover for surface (secondary + same delta rule)
+
+    --color-background-tertiary: ''; // Subtle layer (nested UI, less important containers)
+    --color-background-tertiary-hover: ''; // Hover for subtle layer (tertiary + same delta rule)
+
+    --color-background-muted: ''; // Muted layer (lowest emphasis, not necessarily disabled — used for soft UI, inputs, chips)
+    --color-background-muted-hover: ''; // Hover for muted (muted + same delta rule)
+
+    // -------------------
+    // Text Colors
+    // -------------------
+
+    --color-text-primary: ''; // High emphasis text (main readable content)
+    --color-text-secondary: ''; // Medium emphasis text (supporting content)
+    --color-text-muted: ''; // Low emphasis text (placeholders, hints, metadata)
+
+    --color-text-primary-inverse: ''; // High emphasis text on dark/colored backgrounds
+    --color-text-secondary-inverse: ''; // Medium emphasis text on dark/colored backgrounds
+    --color-text-muted-inverse: ''; // Low emphasis text on dark/colored backgrounds
+
+    // -------------------
+    // Border Colors
+    // -------------------
+
+    --color-border-primary: ''; // Default borders (inputs, cards, containers)
+    --color-border-secondary: ''; // Subtle separators (dividers, low emphasis boundaries)
+    --color-border-focus: ''; // Focus/active state (inputs, interactive elements)
+
+    // -------------------
+    // Status Colors
+    // -------------------
+
+    // SUCCESS (positive state: success messages, confirmations)
+    --color-status-success-foreground: ''; // Text/icon color
+    --color-status-success-foreground-hover: ''; // Hover state for text/icon
+    --color-status-success-foreground-muted: ''; // Low-emphasis text/icon
+
+    --color-status-success-background: ''; // Background for alerts, badges, banners
+    --color-status-success-background-hover: ''; // Hover background (same delta rule)
+    --color-status-success-background-muted: ''; // Soft background (subtle variant)
+
+    --color-status-success-border: ''; // Border color
+    --color-status-success-border-hover: ''; // Hover border
+    --color-status-success-border-muted: ''; // Subtle border
+
+
+    // WARNING (caution state: warnings, attention needed)
+    --color-status-warning-foreground: ''; // Text/icon color
+    --color-status-warning-foreground-hover: ''; // Hover state
+    --color-status-warning-foreground-muted: ''; // Low-emphasis variant
+
+    --color-status-warning-background: ''; // Background
+    --color-status-warning-background-hover: ''; // Hover background
+    --color-status-warning-background-muted: ''; // Subtle background
+
+    --color-status-warning-border: ''; // Border
+    --color-status-warning-border-hover: ''; // Hover border
+    --color-status-warning-border-muted: ''; // Subtle border
+
+
+    // ERROR (negative state: errors, destructive actions)
+    --color-status-error-foreground: ''; // Text/icon color
+    --color-status-error-foreground-hover: ''; // Hover state
+    --color-status-error-foreground-muted: ''; // Low-emphasis variant
+
+    --color-status-error-background: ''; // Background
+    --color-status-error-background-hover: ''; // Hover background
+    --color-status-error-background-muted: ''; // Subtle background
+
+    --color-status-error-border: ''; // Border
+    --color-status-error-border-hover: ''; // Hover border
+    --color-status-error-border-muted: ''; // Subtle border
+    
+
+    // INFO (neutral/informational state)
+    --color-status-info-foreground: ''; // Text/icon color
+    --color-status-info-foreground-hover: ''; // Hover state
+    --color-status-info-foreground-muted: ''; // Low-emphasis variant
+
+    --color-status-info-background: ''; // Background
+    --color-status-info-background-hover: ''; // Hover background
+    --color-status-info-background-muted: ''; // Subtle background
+
+    --color-status-info-border: ''; // Border
+    --color-status-info-border-hover: ''; // Hover border
+    --color-status-info-border-muted: ''; // Subtle border
+    
+
+    // -------------------
+    // Effects Colors
+    // -------------------
+
+    --color-shadow-sm: ''; // Small shadow (subtle elevation: inputs, small elements)
+    --color-shadow-md: ''; // Medium shadow (cards, panels)
+    --color-shadow-lg: ''; // Large shadow (modals, overlays)
+
+    --color-shadow-button: ''; // Default button shadow (interactive elevation)
+    --color-shadow-button-active: ''; // Pressed button shadow (reduced depth)
+    --color-shadow-button-hover: ''; // Hover button shadow (slightly increased depth)
+}
